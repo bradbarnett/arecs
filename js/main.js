@@ -57,7 +57,7 @@ var buildingBoundaries;
 var countiesBoundaries;
 
 // create the layer and add to the map, then will be filled with data
-sql.execute("SELECT * FROM arecs_for_leaflet")
+sql.execute("SELECT * FROM leaf_arecs2")
     .done(function (data) {
         arecBoundaries = L.geoJson(data, {
             style: arecStyleZoomedOut,
@@ -115,11 +115,12 @@ function eachArec(feature, layer) {
         // event.preventDefault(); // Prevent the link from scrolling the page.
         mapObject.fitBounds(this.getBounds(),{padding:[175,175]});
         // layer.openPopup();
-        var size = layer.feature.properties.total_acre;
-        var name = layer.feature.properties.site_name;
-        console.log(content);
+        var size = layer.feature.properties.size;
+        var name = layer.feature.properties.arec_name;
+        var image = "../img/photos/" + layer.feature.properties.photos;
+        // console.log(content);
         // layer.bindPopup(content);
-        $(".right-overlay").html("<h1>" + name + "</h1><p>Size: " + size + "</p>");
+        $(".right-overlay").html("<h1>" + name + "</h1><img class='arec-photo' src='" + image + "'><p>Size: " + size + "</p>");
 
     });
     // li.appendChild(a);
@@ -145,18 +146,53 @@ function clickableDiv() {
 
         }
         else {
+            /**
+             "Eastern Virginia AREC"
+             buildings_
+             cartodb_id
+             county
+             director
+             employees2
+             employees_
+             facility_u
+             include_ho
+             locator_ma
+             other_facu
+             photos
+             resident_f
+             site_name
+             size
+             size_other
+             students_a
+             study_focu
+             total_gsf
+             town
+             **/
             var buttonId = this.id;
             console.log(buttonId);
             arecBoundaries.eachLayer(function (layer) {
                 if (layer.feature.properties.cartodb_id == buttonId) {
-                    console.log(layer);
+                    console.log(layer.feature);
                     mapObject.fitBounds(layer.getBounds(),{padding:[175,175]});
-                    content = layer.feature.properties;
-                    var size = layer.feature.properties.total_acre;
-                    var name = layer.feature.properties.site_name;
-                    console.log(content);
+                    var size = layer.feature.properties.size;
+                    var name = layer.feature.properties.arec_name;
+                    var image = "../img/photos/" + layer.feature.properties.photos;
+                    var inset = "../img/inset/" + layer.feature.properties.locator_ma;
+                    var location = layer.feature.properties.town +", " + layer.feature.properties.county;
+                    var focus = layer.feature.properties.study_focu;
+                    var director = layer.feature.properties.director;
+                    var faculty = layer.feature.properties.resident_f;
+                    var otherFaculty = layer.feature.properties.other_facu;
+                    var students = layer.feature.properties.students_a;
+                    var employees = layer.feature.properties.employees_;
+                    var otherEmployees = layer.feature.properties.employees2;
+                    var buildings = layer.feature.properties.buildings_;
+                    var totalGSF = layer.feature.properties.total_gsf;
+                    var upgrades = layer.feature.properties.facility_u;
+                    // console.log(content);
                     // layer.bindPopup(content);
-                    $(".right-overlay").html("<h1>" + name + "</h1><p>Size: " + size + "</p>");
+                    $(".right-overlay").html("<img class='arec-photo' src='" + image + "'><h1>" + name + "</h1><h4>"+ location + "</h4><p><strong>Size:</strong> " + size + "</p><p><strong>Study Focus: </strong> " + focus + "</p><h3>People</h3><p><strong>Director: </strong> " + director + "</p><p><strong>Resident Faculty: </strong> " + faculty + "</p><p><strong>Other Faculty: </strong> " + otherFaculty + "</p><p><strong>Students: </strong> " + students + "</p><p><strong>Full-time Employees: </strong> " + employees + "</p><p><strong>Other Employees: </strong> " + otherEmployees + "</p><h4>Facilities</h4><p><strong>Buildings: </strong> " + buildings + "</p><p><strong>Total GSF: </strong> " + totalGSF + "</p><p><strong>Facility Upgrades: </strong> " + upgrades + "</p>");
+                        jQuery('.right-overlay').scrollbar();
                 }
             })
         }
