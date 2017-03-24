@@ -29,30 +29,53 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="75">
+              <caret line="5" column="103" selection-start-line="5" selection-start-column="103" selection-end-line="5" selection-end-column="103" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="290" column="594" selection-start-line="290" selection-start-column="594" selection-end-line="290" selection-end-column="594" />
+            <state relative-caret-position="268">
+              <caret line="164" column="27" selection-start-line="164" selection-start-column="27" selection-end-line="164" selection-end-column="27" />
               <folding>
-                <marker date="1490118866000" expanded="true" signature="10212:10223" placeholder="..." />
+                <element signature="e#1479#1592#0" expanded="false" />
+                <element signature="e#1618#1729#0" expanded="false" />
+                <element signature="e#1752#1863#0" expanded="false" />
+                <element signature="e#1885#1971#0" expanded="false" />
+                <element signature="e#1989#2031#0" expanded="false" />
+                <element signature="e#2072#2477#0" expanded="false" />
+                <element signature="n#!!block;n#checkZoom#0" expanded="false" />
+                <element signature="n#!!block;n#allProps#0" expanded="false" />
+                <marker date="1490391471000" expanded="true" signature="9463:9474" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_cartosublayers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main_cartosublayers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="61" column="3" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
+              <folding>
+                <element signature="e#102#417#0" expanded="false" />
+                <element signature="e#600#945#0" expanded="false" />
+                <element signature="e#1101#1154#0" expanded="false" />
+                <marker date="1490389719000" expanded="true" signature="12246:12257" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state relative-caret-position="885">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,15 +97,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/js/main.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/js/main_cartosublayers.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/carto.js" />
         <option value="$PROJECT_DIR$/css/carto.css" />
+        <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/js/main_cartosublayers.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/css/custom.css" />
       </list>
     </option>
   </component>
@@ -195,6 +220,11 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
@@ -265,12 +295,12 @@
       <updated>1488835706327</updated>
       <workItem from="1488835710015" duration="19058000" />
       <workItem from="1489515283104" duration="10645000" />
-      <workItem from="1490041215223" duration="11192000" />
+      <workItem from="1490041215223" duration="22720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40895000" />
+    <option name="totallyTimeSpent" value="52423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -282,7 +312,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796487" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3274596" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -324,7 +354,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -341,7 +373,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490118866000" expanded="true" signature="10212:10223" placeholder="..." />
+            <element signature="e#1479#1592#0" expanded="false" />
+            <element signature="e#1618#1729#0" expanded="false" />
+            <element signature="e#1752#1863#0" expanded="false" />
+            <element signature="e#1885#1971#0" expanded="false" />
+            <element signature="e#1989#2031#0" expanded="false" />
+            <element signature="e#2072#2477#0" expanded="false" />
+            <element signature="n#!!block;n#checkZoom#0" expanded="false" />
+            <element signature="n#!!block;n#allProps#0" expanded="false" />
+            <marker date="1490391471000" expanded="true" signature="9463:9474" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -367,7 +407,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490118866000" expanded="true" signature="10212:10223" placeholder="..." />
+            <element signature="e#1479#1592#0" expanded="false" />
+            <element signature="e#1618#1729#0" expanded="false" />
+            <element signature="e#1752#1863#0" expanded="false" />
+            <element signature="e#1885#1971#0" expanded="false" />
+            <element signature="e#1989#2031#0" expanded="false" />
+            <element signature="e#2072#2477#0" expanded="false" />
+            <element signature="n#!!block;n#checkZoom#0" expanded="false" />
+            <element signature="n#!!block;n#allProps#0" expanded="false" />
+            <marker date="1490391471000" expanded="true" signature="9463:9474" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -398,29 +446,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="75">
+          <caret line="5" column="103" selection-start-line="5" selection-start-column="103" selection-end-line="5" selection-end-column="103" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main_cartosublayers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="61" column="3" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
+          <folding>
+            <element signature="e#102#417#0" expanded="false" />
+            <element signature="e#600#945#0" expanded="false" />
+            <element signature="e#1101#1154#0" expanded="false" />
+            <marker date="1490389719000" expanded="true" signature="12246:12257" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="290" column="594" selection-start-line="290" selection-start-column="594" selection-end-line="290" selection-end-column="594" />
+        <state relative-caret-position="268">
+          <caret line="164" column="27" selection-start-line="164" selection-start-column="27" selection-end-line="164" selection-end-column="27" />
           <folding>
-            <marker date="1490118866000" expanded="true" signature="10212:10223" placeholder="..." />
+            <element signature="e#1479#1592#0" expanded="false" />
+            <element signature="e#1618#1729#0" expanded="false" />
+            <element signature="e#1752#1863#0" expanded="false" />
+            <element signature="e#1885#1971#0" expanded="false" />
+            <element signature="e#1989#2031#0" expanded="false" />
+            <element signature="e#2072#2477#0" expanded="false" />
+            <element signature="n#!!block;n#checkZoom#0" expanded="false" />
+            <element signature="n#!!block;n#allProps#0" expanded="false" />
+            <marker date="1490391471000" expanded="true" signature="9463:9474" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
