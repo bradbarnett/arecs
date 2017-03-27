@@ -8,16 +8,25 @@ html,body {
 }
 
 #map-container {
-    height: 600px;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 125px;
+    bottom: 0;
+    /*height: 100%;*/
+}
+
+#map {
+    height: 100%;
     width: 100%;
     display: block;
 }
 
-#map {
-    height: 500px;
+#top-section {
+    position: absolute;
+    top: 0;
     width: 100%;
-    display: block;
+    height: 125px;
 }
 
 #header {
@@ -32,7 +41,7 @@ html,body {
 #buttons {
     height: 75px;
     display: block;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-left: 10px;
 }
 
@@ -103,9 +112,20 @@ p {
     margin-bottom: 0;
 }
 
-img.arec-photo,img.arec-location {
+img.arec-photo {
     width: 275px !important;
 }
+
+#inset-image {
+margin-bottom: 10px;
+    display: inline-block;
+}
+
+img.arec-location {
+    width: 200px !important;
+}
+
+
 
 h1 {
     margin-bottom: 0;
@@ -133,10 +153,18 @@ strong  {
     display: inline-block;
 }
 
-
 .legend-container {
     box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
     background-color: rgba(255,255,255,0.8);
     padding: 10px;
+}
 
+.leaflet-popup-content p {
+     margin: 0;
+    font-size: 100%;
+}
+
+.leaflet-popup-content h4 {
+    font-weight: 500;
+    margin-bottom: 5px;
 }
