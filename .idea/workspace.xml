@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56fedd6d-a27d-407c-bcae-00e34241b674" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scratch.js" afterPath="$PROJECT_DIR$/js/scratch.js" />
     </list>
     <ignored path="arec.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,16 +33,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scratch.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scratch.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/scratch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="219" column="20" selection-start-line="219" selection-start-column="20" selection-end-line="219" selection-end-column="20" />
+            <state relative-caret-position="396">
+              <caret line="273" column="39" selection-start-line="273" selection-start-column="39" selection-end-line="273" selection-end-column="39" />
               <folding>
                 <element signature="n#!!block;n#createButtons#0" expanded="false" />
-                <element signature="n#!!block;n#allProps#0" expanded="false" />
-                <element signature="n#!!block;n#clickableDiv#0" expanded="false" />
-                <marker date="1490626773000" expanded="true" signature="11381:11392" placeholder="..." />
+                <marker date="1490627588000" expanded="true" signature="11393:11404" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -58,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -103,9 +101,9 @@
         <option value="$PROJECT_DIR$/css/carto.css" />
         <option value="$PROJECT_DIR$/js/main_cartosublayers.js" />
         <option value="$PROJECT_DIR$/css/custom.css" />
-        <option value="$PROJECT_DIR$/js/scratch.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/scratch.js" />
       </list>
     </option>
   </component>
@@ -313,12 +311,12 @@
       <workItem from="1488835710015" duration="19058000" />
       <workItem from="1489515283104" duration="10645000" />
       <workItem from="1490041215223" duration="22818000" />
-      <workItem from="1490443133375" duration="10241000" />
+      <workItem from="1490443133375" duration="10330000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62762000" />
+    <option name="totallyTimeSpent" value="62851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -545,19 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/scratch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="219" column="20" selection-start-line="219" selection-start-column="20" selection-end-line="219" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!block;n#createButtons#0" expanded="false" />
-            <element signature="n#!!block;n#allProps#0" expanded="false" />
-            <element signature="n#!!block;n#clickableDiv#0" expanded="false" />
-            <marker date="1490626773000" expanded="true" signature="11381:11392" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -572,6 +557,17 @@
             <element signature="n#!!block;n#checkZoom#0" expanded="false" />
             <element signature="n#!!block;n#allProps#0" expanded="false" />
             <marker date="1490627474000" expanded="true" signature="9472:9483" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scratch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="273" column="39" selection-start-line="273" selection-start-column="39" selection-end-line="273" selection-end-column="39" />
+          <folding>
+            <element signature="n#!!block;n#createButtons#0" expanded="false" />
+            <marker date="1490627588000" expanded="true" signature="11393:11404" placeholder="..." />
           </folding>
         </state>
       </provider>
