@@ -2,28 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56fedd6d-a27d-407c-bcae-00e34241b674" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_EasternShore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_EasternVirginia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_HamptonRoads.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_ReynoldsHomestead.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_ShenendoahValley.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_SouthernPiedmont.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_SouthwestVirginia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_VirginiaSeafood.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Eastern Shore.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Eastern Virginia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Hampton Roads.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Reynolds Homestead.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Shenendoah Valley.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Southern Piedmont.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Southwest Virginia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Virginia Seafood.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Alson.png" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Alson.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Main.png" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Main.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Middleburg.png" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Middleburg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Tidewater.png" afterPath="$PROJECT_DIR$/img/inset/VA_Locator_for_Carto_Tidewater.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="arec.iws" />
@@ -45,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="90">
+              <caret line="6" column="55" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scratch.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scratch.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scratch.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="219" column="73" selection-start-line="219" selection-start-column="73" selection-end-line="219" selection-end-column="73" />
+              <caret line="219" column="20" selection-start-line="219" selection-start-column="20" selection-end-line="219" selection-end-column="20" />
               <folding>
                 <element signature="n#!!block;n#createButtons#0" expanded="false" />
                 <element signature="n#!!block;n#allProps#0" expanded="false" />
@@ -125,9 +103,9 @@
         <option value="$PROJECT_DIR$/css/carto.css" />
         <option value="$PROJECT_DIR$/js/main_cartosublayers.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/js/scratch.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -335,18 +313,18 @@
       <workItem from="1488835710015" duration="19058000" />
       <workItem from="1489515283104" duration="10645000" />
       <workItem from="1490041215223" duration="22818000" />
-      <workItem from="1490443133375" duration="9924000" />
+      <workItem from="1490443133375" duration="10033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62445000" />
+    <option name="totallyTimeSpent" value="62554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3129468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3129468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -564,14 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -588,13 +558,21 @@
     <entry file="file://$PROJECT_DIR$/js/scratch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="219" column="73" selection-start-line="219" selection-start-column="73" selection-end-line="219" selection-end-column="73" />
+          <caret line="219" column="20" selection-start-line="219" selection-start-column="20" selection-end-line="219" selection-end-column="20" />
           <folding>
             <element signature="n#!!block;n#createButtons#0" expanded="false" />
             <element signature="n#!!block;n#allProps#0" expanded="false" />
             <element signature="n#!!block;n#clickableDiv#0" expanded="false" />
             <marker date="1490626773000" expanded="true" signature="11381:11392" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
