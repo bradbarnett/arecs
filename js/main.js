@@ -225,8 +225,8 @@ function clickableDiv() {
                     }
                     var size = layer.feature.properties.size;
                     var name = layer.feature.properties.arec_name;
-                    var image = "img/photos/" + layer.feature.properties.photos;
-                    var inset = "img/inset/" + layer.feature.properties.locator_ma;
+                    var image = "arecs/img/photos/" + layer.feature.properties.photos;
+                    var inset = "arecs/img/inset/" + layer.feature.properties.locator_ma;
                     var location = layer.feature.properties.town + ", " + layer.feature.properties.county;
                     var focus = layer.feature.properties.study_focu;
                     var director = layer.feature.properties.director;
