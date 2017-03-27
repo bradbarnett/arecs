@@ -216,8 +216,8 @@ function eachArec(feature, layer) {
         // layer.openPopup();
         var size = layer.feature.properties.size;
         var name = layer.feature.properties.arec_name;
-        var image = "arecs/img/photos/" + layer.feature.properties.photos;
-        var inset = "arecs/img/inset/" + layer.feature.properties.locator_ma;
+        var image = "img/photos/" + layer.feature.properties.photos;
+        var inset = "img/inset/" + layer.feature.properties.locator_ma;
         console.log(inset);
         // console.log(content);
         $(".inset-image").html("<img class='arec-location' src=" + inset + ">");
@@ -259,7 +259,7 @@ function clickableDiv() {
                     }
                     var size = layer.feature.properties.size;
                     var name = layer.feature.properties.arec_name;
-                    var image = "arecs/img/photos/" + layer.feature.properties.photos;
+                    var image = "img/photos/" + layer.feature.properties.photos;
                     var location = layer.feature.properties.town + ", " + layer.feature.properties.county;
                     var focus = layer.feature.properties.study_focu;
                     var director = layer.feature.properties.director;
@@ -271,7 +271,7 @@ function clickableDiv() {
                     var buildings = layer.feature.properties.buildings_;
                     var totalGSF = layer.feature.properties.total_gsf;
                     var upgrades = layer.feature.properties.facility_u;
-                    var inset = "arecs/img/inset/" + layer.feature.properties.locator_ma;
+                    var inset = "img/inset/" + layer.feature.properties.locator_ma;
                     // console.log(content);
                     $(".inset-image").html("<img class='arec-location' src=" + inset + ">");
                     $(".right-overlay").html("<img class='arec-photo' src='" + image + "'><h1>" + name + "</h1><h4>" + location + "</h4><p><strong>Size:</strong> " + size + "</p><p><strong>Study Focus: </strong> " + focus + "</p><h3>People</h3><p><strong>Director: </strong> " + director + "</p><p><strong>Resident Faculty: </strong> " + faculty + "</p><p><strong>Other Faculty: </strong> " + otherFaculty + "</p><p><strong>Students: </strong> " + students + "</p><p><strong>Full-time Employees: </strong> " + employees + "</p><p><strong>Other Employees: </strong> " + otherEmployees + "</p><h3>Facilities</h3><p><strong>Buildings: </strong> " + buildings + "</p><p><strong>Total GSF: </strong> " + totalGSF + "</p><p><strong>Facility Upgrades: </strong> " + upgrades + "</p>");

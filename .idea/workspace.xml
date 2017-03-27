@@ -36,11 +36,11 @@
       <file leaf-file-name="scratch.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/scratch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="126">
               <caret line="273" column="39" selection-start-line="273" selection-start-column="39" selection-end-line="273" selection-end-column="39" />
               <folding>
                 <element signature="n#!!block;n#createButtons#0" expanded="false" />
-                <marker date="1490627588000" expanded="true" signature="11393:11404" placeholder="..." />
+                <marker date="1490627682000" expanded="true" signature="11369:11380" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -311,12 +311,12 @@
       <workItem from="1488835710015" duration="19058000" />
       <workItem from="1489515283104" duration="10645000" />
       <workItem from="1490041215223" duration="22818000" />
-      <workItem from="1490443133375" duration="10330000" />
+      <workItem from="1490443133375" duration="10379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62851000" />
+    <option name="totallyTimeSpent" value="62900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -563,11 +563,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scratch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="126">
           <caret line="273" column="39" selection-start-line="273" selection-start-column="39" selection-end-line="273" selection-end-column="39" />
           <folding>
             <element signature="n#!!block;n#createButtons#0" expanded="false" />
-            <marker date="1490627588000" expanded="true" signature="11393:11404" placeholder="..." />
+            <marker date="1490627682000" expanded="true" signature="11369:11380" placeholder="..." />
           </folding>
         </state>
       </provider>
