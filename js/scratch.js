@@ -41,6 +41,14 @@ var list = document.getElementById("list");
 $("#map-container").append("<div class='right-overlay'><p>Click on the buttons or directly on the map to explore</p></div>");
 
 
+var stateStyle = {
+    "color": "#F15F4D",
+    "weight": 4,
+    "opacity": 1,
+    "fillColor": "#F15F4D",
+    "fillOpacity": 0
+};
+
 var arecStyleZoomedOut = {
     "color": "#F15F4D",
     "weight": 4,
@@ -63,12 +71,6 @@ var buildingsStyle = {
     "fillOpacity": 1
 };
 
-var countiesStyle = {
-    "color": "gray",
-    "weight": 0.75,
-    "opacity": 0.35,
-    "fillOpacity": 0
-};
 
 var parcelColor = function (ownership) {
     if (ownership == 'Leased') {
@@ -86,35 +88,28 @@ var parcelColor = function (ownership) {
         return 'gray';
     }
 };
+
+var stateBoundaries;
 var arecBoundaries;
 var buildingBoundaries;
-var countiesBoundaries;
 var parcelBoundaries;
+var arecMarkers = new L.layerGroup();
 var sql = new cartodb.SQL({user: 'sasaki', format: 'geojson'});
 
-function checkZoom(mapObject) {
-    // console.log(mapObject.getZoom());
-    if (mapObject.getZoom() < 12) {
-        return 0;
-    }
-    else {
-        return 0.2;
-    }
-}
+
+//State Layer
+sql.execute("SELECT * FROM leaf_state")
+    .done(function (data) {
+        stateBoundaries = L.geoJson(data, {
+            style: stateStyle
+        }).addTo(mapObject);
+    })
+    .error(function (errors) {
+        // errors contains a list of errors
+        console.log("errors:" + errors);
+    })
 
 
-//County Layer
-// sql.execute("SELECT the_geom FROM leaf_cos")
-//     .done(function (data) {
-//
-//         countiesBoundaries = L.geoJson(data, {
-//             style: countiesStyle,
-//         }).addTo(mapObject);
-//     })
-//     .error(function (errors) {
-//         // errors contains a list of errors
-//         console.log("errors:" + errors);
-//     })
 
 //AREC Boundary Layer
 sql.execute("SELECT * FROM leaf_arecs2")
@@ -122,8 +117,8 @@ sql.execute("SELECT * FROM leaf_arecs2")
         arecBoundaries = L.geoJson(data, {
             style: arecStyleZoomedOut,
             onEachFeature: eachArec
-        }).addTo(mapObject)
-        ;
+        }).addTo(mapObject);
+        arecMarkers.addTo(mapObject);
         $("#buttons").append("<div id='reset-view' class='main-button'>Reset View</div>");
         clickableDiv();
     })
@@ -131,6 +126,7 @@ sql.execute("SELECT * FROM leaf_arecs2")
         // errors contains a list of errors
         console.log("errors:" + errors);
     })
+
 
 
 //Parcel Layer (to be color coded)
@@ -179,7 +175,8 @@ sql.execute("SELECT * FROM leaf_bldgs")
             onEachFeature: function (feature, layer) {
                 var description = feature.properties.descriptio;
                 var size = feature.properties.gross + " sq ft";
-                layer.bindPopup("<h4>" + description + "</h4><p><strong>Size: </strong>" + size + "</p>");
+                var number = feature.properties.property;
+                layer.bindPopup("<h4>" + description + "</h4><p><strong>Building Number: </strong>" + number + "</p><p><strong>Size: </strong>" + size + "</p>");
                 layer.on("mouseover", function (e) {
                     console.log("bldg")
                     // do something here like display a popup
@@ -194,14 +191,13 @@ sql.execute("SELECT * FROM leaf_bldgs")
                     })
                 });
             }
-        }).addTo(mapObject)
+        }).addTo(mapObject);
+
     })
     .error(function (errors) {
         // errors contains a list of errors
         console.log("errors:" + errors);
     })
-
-
 
 function createButtons(id, name) {
     $("#buttons").append("<div id='" + id + "' class='main-button'>" + name + "</div>");
@@ -209,24 +205,51 @@ function createButtons(id, name) {
 function eachArec(feature, layer) {
     createButtons(layer.feature.properties.cartodb_id, layer.feature.properties.site_name);
     var content = allProps(feature.properties);
-    console.log(feature.properties);
-    layer.on("click", function (event) {
-        // event.preventDefault(); // Prevent the link from scrolling the page.
-        mapObject.fitBounds(this.getBounds(), {padding: [175, 175]});
-        // layer.openPopup();
-        var size = layer.feature.properties.size;
-        var name = layer.feature.properties.arec_name;
-        var image = "img/photos/" + layer.feature.properties.photos;
-        var inset = "img/inset/" + layer.feature.properties.locator_ma;
-        console.log(inset);
-        // console.log(content);
-        $(".inset-image").html("<img class='arec-location' src=" + inset + ">");
-        $(".right-overlay").html("<h1>" + name + "</h1><img class='arec-photo' src='" + image + "'><p>Size: " + size + "</p>");
+    // console.log(feature.properties);
+    console.log(feature.geometry.type)
+    if (feature.geometry.type == 'MultiPolygon') {
 
-    });
-    // li.appendChild(a);
-    // list.appendChild(li);
-    // layer.bindPopup(content);
+        // Don't stroke and do opaque fill
+        layer.setStyle({
+            'weight': 0,
+            'fillOpacity': 0
+        });
+
+        // Get bounds of polygon
+        var bounds = layer.getBounds();
+
+        // Get center of bounds
+        var center = bounds.getCenter();
+        console.log(center);
+
+        //Use center to put marker on map
+            var marker = L.circleMarker(center, {
+                color: '#F15F4D',
+                fillColor: '#F15F4D',
+                fillOpacity: 1,
+                radius: 4
+            });
+
+        arecMarkers.addLayer(marker);
+
+        // console.log(marker);
+        //
+        //
+        // marker.on("click", function (event) {
+        //     // event.preventDefault(); // Prevent the link from scrolling the page.
+        //     mapObject.fitBounds(layer.getBounds(), {padding: [175, 175]});
+        //     // layer.openPopup();
+        //     var size = layer.feature.properties.size;
+        //     var name = layer.feature.properties.arec_name;
+        //     var image = "img/photos/" + layer.feature.properties.photos;
+        //     var inset = "img/inset/" + layer.feature.properties.locator_ma;
+        //     console.log(inset);
+        //     // console.log(content);
+        //     $(".inset-image").html("<img class='arec-location' src=" + inset + ">");
+        //     $(".right-overlay").html("<h1>" + name + "</h1><img class='arec-photo' src='" + image + "'><p>Size: " + size + "</p>");
+        //
+        // });
+    }
 }
 function allProps(props) {
     var result = [];
@@ -271,10 +294,10 @@ function clickableDiv() {
                     var buildings = layer.feature.properties.buildings_;
                     var totalGSF = layer.feature.properties.total_gsf;
                     var upgrades = layer.feature.properties.facility_u;
-                    var inset = "img/inset/" + layer.feature.properties.locator_ma;
+                    var inset = "img/resized/" + layer.feature.properties.locator_ma;
                     // console.log(content);
                     $(".inset-image").html("<img class='arec-location' src=" + inset + ">");
-                    $(".right-overlay").html("<img class='arec-photo' src='" + image + "'><h1>" + name + "</h1><h4>" + location + "</h4><p><strong>Size:</strong> " + size + "</p><p><strong>Study Focus: </strong> " + focus + "</p><h3>People</h3><p><strong>Director: </strong> " + director + "</p><p><strong>Resident Faculty: </strong> " + faculty + "</p><p><strong>Other Faculty: </strong> " + otherFaculty + "</p><p><strong>Students: </strong> " + students + "</p><p><strong>Full-time Employees: </strong> " + employees + "</p><p><strong>Other Employees: </strong> " + otherEmployees + "</p><h3>Facilities</h3><p><strong>Buildings: </strong> " + buildings + "</p><p><strong>Total GSF: </strong> " + totalGSF + "</p><p><strong>Facility Upgrades: </strong> " + upgrades + "</p>");
+                    $(".right-overlay").html("<img class='arec-photo' src='" + image + "'><h1>" + name + "</h1><h4 style='font-style: italic; margin-bottom: 15px;'>" + location + "</h4><p><strong>Size:</strong> " + size + "</p><p><strong>Study Focus: </strong> " + focus + "</p><h3>People</h3><p><strong>Director: </strong> " + director + "</p><p><strong>Resident Faculty: </strong> " + faculty + "</p><p><strong>Other Faculty: </strong> " + otherFaculty + "</p><p><strong>Students: </strong> " + students + "</p><p><strong>Full-time Employees: </strong> " + employees + "</p><p><strong>Other Employees: </strong> " + otherEmployees + "</p><h3>Facilities</h3><p><strong>Buildings: </strong> " + buildings + "</p><p><strong>Total GSF: </strong> " + totalGSF + "</p><p><strong>Facility Upgrades: </strong> " + upgrades + "</p>");
                 }
             })
         }
@@ -298,18 +321,25 @@ legend.onAdd = function (mapObject) {
 
 legend.addTo(mapObject);
 
+
 $(".legend-container").hide();
+
+
+
+
 
 mapObject.on('zoomend', function () {
     console.log(mapObject.getZoom());
     if (mapObject.getZoom() < 12) {
         mapObject.removeLayer(buildingBoundaries);
         mapObject.removeLayer(parcelBoundaries);
-        mapObject.addLayer(arecBoundaries);
+        mapObject.addLayer(arecMarkers);
+        // mapObject.addLayer(arecBoundaries);
         $(".legend-container").hide();
     }
     if (mapObject.getZoom() >= 12) {
         // mapObject.removeLayer(countiesBoundaries);
+        mapObject.removeLayer(arecMarkers);
         mapObject.removeLayer(arecBoundaries);
         mapObject.addLayer(parcelBoundaries);
         mapObject.addLayer(buildingBoundaries);
@@ -317,6 +347,7 @@ mapObject.on('zoomend', function () {
         $(".legend-container").show();
 
     }
+
 });
 
 

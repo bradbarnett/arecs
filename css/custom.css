@@ -122,7 +122,9 @@ margin-bottom: 10px;
 }
 
 img.arec-location {
-    width: 200px !important;
+    width: 250px !important;
+    margin-bottom: 10px;
+    transition: all 0.5s;
 }
 
 
