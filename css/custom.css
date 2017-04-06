@@ -170,3 +170,29 @@ strong  {
     font-weight: 500;
     margin-bottom: 5px;
 }
+
+
+.arec-marker, .leaflet-marker, .leaflet-div-icon {
+    background-color: rgba(255,255,255,0) !important;
+    font-weight: 400;
+    border: none;
+    transition: all 0.5s;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.leaflet-marker-icon.leaflet-div-icon.leaflet-zoom-animated.leaflet-clickable:hover {
+    font-weight: 500;
+}
+
+.marker-text {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 1px 4px 2px 3px;
+}
+
+#text-size-div {
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    white-space: nowrap; /* Thanks to Herb Caudill comment */
+}
