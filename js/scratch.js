@@ -265,7 +265,7 @@ function eachArec(feature, layer) {
             else {
                 upgrades = layer.feature.properties.facility_u + " (2009-2011)";
             }
-            var size = layer.feature.properties.size;
+            var size = layer.feature.properties.size + " acres";
             var name = layer.feature.properties.arec_name;
             var image = "img/photos/" + layer.feature.properties.photos;
             var location = layer.feature.properties.town + ", " + layer.feature.properties.county;
@@ -280,7 +280,7 @@ function eachArec(feature, layer) {
             var totalGSF = layer.feature.properties.total_gsf;
             var inset = "img/resized/" + layer.feature.properties.locator_ma;
             var arecLink = "http://arec.vaes.vt.edu/arec" + layer.feature.properties.link;
-            $(".right-overlay").html("<img class='arec-photo' src='" + image + "'><h1>" + name + "</h1><h4 style='font-style: italic; margin-bottom: 15px;'>" + location + "</h4><p><strong>Size:</strong> " + size + "</p><p><strong>Study Focus: </strong> " + focus + "</p><h3>People</h3><p><strong>Director: </strong> " + director + "</p><p><strong>Resident Faculty: </strong> " + faculty + "</p><p><strong>Other Faculty: </strong> " + otherFaculty + "</p><p><strong>Students: </strong> " + students + "</p><p><strong>Full-time Employees: </strong> " + employees + "</p><p><strong>Other Employees: </strong> " + otherEmployees + "</p><h3>Facilities</h3><p><strong>Buildings: </strong> " + buildings + "</p><p><strong>Total GSF: </strong> " + totalGSF + "</p><p><strong>Facility Upgrades: </strong> " + upgrades + "</p><div><a class='arec-link' target='_new' href=" + arecLink + ">Visit AREC Website</a></div>");
+            $(".right-overlay").html("<img class='arec-photo' src='" + image + "'><h2>" + name + "</h2><p style='font-style: italic; margin-bottom: 15px;'>" + location + "</p><p><strong>Size:</strong> " + size + "</p><p><strong>Study Focus: </strong> " + focus + "</p><h3>People</h3><p><strong>Director: </strong> " + director + "</p><p><strong>Resident Faculty: </strong> " + faculty + "</p><p><strong>Other Faculty: </strong> " + otherFaculty + "</p><p><strong>Students: </strong> " + students + "</p><p><strong>Full-time Employees: </strong> " + employees + "</p><p><strong>Other Employees: </strong> " + otherEmployees + "</p><h3>Facilities</h3><p><strong>Buildings: </strong> " + buildings + "</p><p><strong>Total GSF: </strong> " + totalGSF + "</p><p><strong>Facility Upgrades: </strong> " + upgrades + "</p><div><a class='arec-link' target='_new' href=" + arecLink + ">Visit AREC Website</a></div>");
             $(".inset-image").html("<img class='arec-location' src=" + inset + ">");
 
         });
@@ -315,7 +315,7 @@ function clickableDiv() {
                     else {
                         mapObject.fitBounds(layer.getBounds(), {padding: [175, 175]});
                     }
-                    var size = layer.feature.properties.size;
+                    var size = layer.feature.properties.size + " acres";
                     var name = layer.feature.properties.arec_name;
                     var image = "img/photos/" + layer.feature.properties.photos;
                     var location = layer.feature.properties.town + ", " + layer.feature.properties.county;
@@ -340,7 +340,7 @@ function clickableDiv() {
                     var arecLink = "http://arec.vaes.vt.edu/arec" + layer.feature.properties.link;
                     // console.log(content);
                     $(".inset-image").html("<img class='arec-location' src=" + inset + ">");
-                    $(".right-overlay").html("<img class='arec-photo' src='" + image + "'><h1>" + name + "</h1><h4 style='font-style: italic; margin-bottom: 15px;'>" + location + "</h4><p><strong>Size:</strong> " + size + "</p><p><strong>Study Focus: </strong> " + focus + "</p><h3>People</h3><p><strong>Director: </strong> " + director + "</p><p><strong>Resident Faculty: </strong> " + faculty + "</p><p><strong>Other Faculty: </strong> " + otherFaculty + "</p><p><strong>Students: </strong> " + students + "</p><p><strong>Full-time Employees: </strong> " + employees + "</p><p><strong>Other Employees: </strong> " + otherEmployees + "</p><h3>Facilities</h3><p><strong>Buildings: </strong> " + buildings + "</p><p><strong>Total GSF: </strong> " + totalGSF + "</p><p><strong>Facility Upgrades: </strong> " + upgrades + " (2009-2011)</p><div><a class='arec-link' target='_new' href=" + arecLink + ">Visit AREC Website</a></div>");
+                    $(".right-overlay").html("<img class='arec-photo' src='" + image + "'><h2>" + name + "</h2><p style='font-style: italic; margin-bottom: 15px;'>" + location + "</p><p><strong>Size:</strong> " + size + "</p><p><strong>Study Focus: </strong> " + focus + "</p><h3>People</h3><p><strong>Director: </strong> " + director + "</p><p><strong>Resident Faculty: </strong> " + faculty + "</p><p><strong>Other Faculty: </strong> " + otherFaculty + "</p><p><strong>Students: </strong> " + students + "</p><p><strong>Full-time Employees: </strong> " + employees + "</p><p><strong>Other Employees: </strong> " + otherEmployees + "</p><h3>Facilities</h3><p><strong>Buildings: </strong> " + buildings + "</p><p><strong>Total GSF: </strong> " + totalGSF + "</p><p><strong>Facility Upgrades: </strong> " + upgrades + "</p><div><a class='arec-link' target='_new' href=" + arecLink + ">Visit AREC Website</a></div>");
 
 
                 }

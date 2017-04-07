@@ -1,6 +1,6 @@
 html,body {
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial,sans-serif;
+    font-family: "Montserrat","Helvetica Neue", Helvetica, Arial,sans-serif;
     font-size: 14px;
     height: 100%;
     width: 100%;
@@ -35,7 +35,7 @@ html,body {
     padding: 5px 0 0 10px;
     font-weight: 500;
     color: whitesmoke;
-    letter-spacing: 1.25px;
+    letter-spacing: 1.02px;
 }
 
 #buttons {
@@ -129,7 +129,7 @@ img.arec-location {
 
 
 
-h1 {
+h1,h2 {
     margin-bottom: 0;
 }
 
@@ -140,8 +140,8 @@ h4 {
 
 h3 {
     font-weight: 600;
-    font-size: 150%;
-    margin-bottom: -5px;
+    font-size: 110%;
+    margin-bottom: 0px;
 }
 
 strong  {

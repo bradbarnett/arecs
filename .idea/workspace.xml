@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56fedd6d-a27d-407c-bcae-00e34241b674" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scratch.js" afterPath="$PROJECT_DIR$/js/scratch.js" />
     </list>
     <ignored path="arec.iws" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="135">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -37,12 +38,12 @@
       <file leaf-file-name="scratch.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/scratch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="337" column="21" selection-start-line="337" selection-start-column="21" selection-end-line="337" selection-end-column="21" />
+            <state relative-caret-position="134">
+              <caret line="267" column="64" selection-start-line="267" selection-start-column="64" selection-end-line="267" selection-end-column="64" />
               <folding>
-                <marker date="1491576102000" expanded="true" signature="10277:10317" placeholder="..." />
-                <marker date="1491576102000" expanded="true" signature="14126:14166" placeholder="..." />
-                <marker date="1491576102000" expanded="true" signature="15521:15532" placeholder="..." />
+                <marker date="1491576790000" expanded="true" signature="10287:10327" placeholder="..." />
+                <marker date="1491576790000" expanded="true" signature="14145:14185" placeholder="..." />
+                <marker date="1491576790000" expanded="true" signature="15527:15538" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -51,8 +52,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="235" column="19" selection-start-line="235" selection-start-column="19" selection-end-line="235" selection-end-column="19" />
+            <state relative-caret-position="306">
+              <caret line="143" column="23" selection-start-line="143" selection-start-column="23" selection-end-line="143" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -282,12 +283,12 @@
       <workItem from="1489515283104" duration="10645000" />
       <workItem from="1490041215223" duration="22818000" />
       <workItem from="1490443133375" duration="12552000" />
-      <workItem from="1490796198869" duration="18298000" />
+      <workItem from="1490796198869" duration="18864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83371000" />
+    <option name="totallyTimeSpent" value="83937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -360,9 +361,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1491576102000" expanded="true" signature="10277:10317" placeholder="..." />
-            <marker date="1491576102000" expanded="true" signature="14126:14166" placeholder="..." />
-            <marker date="1491576102000" expanded="true" signature="15521:15532" placeholder="..." />
+            <marker date="1491576790000" expanded="true" signature="10287:10327" placeholder="..." />
+            <marker date="1491576790000" expanded="true" signature="14145:14185" placeholder="..." />
+            <marker date="1491576790000" expanded="true" signature="15527:15538" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -564,28 +565,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="135">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="235" column="19" selection-start-line="235" selection-start-column="19" selection-end-line="235" selection-end-column="19" />
+        <state relative-caret-position="306">
+          <caret line="143" column="23" selection-start-line="143" selection-start-column="23" selection-end-line="143" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scratch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="337" column="21" selection-start-line="337" selection-start-column="21" selection-end-line="337" selection-end-column="21" />
+        <state relative-caret-position="134">
+          <caret line="267" column="64" selection-start-line="267" selection-start-column="64" selection-end-line="267" selection-end-column="64" />
           <folding>
-            <marker date="1491576102000" expanded="true" signature="10277:10317" placeholder="..." />
-            <marker date="1491576102000" expanded="true" signature="14126:14166" placeholder="..." />
-            <marker date="1491576102000" expanded="true" signature="15521:15532" placeholder="..." />
+            <marker date="1491576790000" expanded="true" signature="10287:10327" placeholder="..." />
+            <marker date="1491576790000" expanded="true" signature="14145:14185" placeholder="..." />
+            <marker date="1491576790000" expanded="true" signature="15527:15538" placeholder="..." />
           </folding>
         </state>
       </provider>
